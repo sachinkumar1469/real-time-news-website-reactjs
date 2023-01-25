@@ -1,8 +1,25 @@
 .home{
     height: max-content;
     min-height: 100vh;
+    position: relative;
     
-    background-color: #bbbbbb;
+    // background-color: #f0e7e7;
+    // background-image: url("https://thumbs.dreamstime.com/b/light-grey-marble-texture-background-luxury-look-table-top-145078224.jpg");
     padding: 0 13%;
     
+}
+
+.home::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("https://img.freepik.com/premium-photo/light-grey-marble-texture-background_7189-2462.jpg");
+    background-size: cover;
+    opacity: 0.5;
 }
