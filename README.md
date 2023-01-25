@@ -1,70 +1,51 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+accessToken
+: 
+"eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoic2FjaGluIGt1bWFyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDVqMncxN2NPd2Vzb2Z3R01PRFgtbVdYMElFY012MWM2NzhnN0c3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL215LWJsb2ctYXBwLTdiYjM1IiwiYXVkIjoibXktYmxvZy1hcHAtN2JiMzUiLCJhdXRoX3RpbWUiOjE2NzQ1ODk0MDcsInVzZXJfaWQiOiJ0ZmJ4U0dnWnE4ZjlVUTRWRUZoUjhsd3htNnQxIiwic3ViIjoidGZieFNHZ1pxOGY5VVE0VkVGaFI4bHd4bTZ0MSIsImlhdCI6MTY3NDU4OTQwNywiZXhwIjoxNjc0NTkzMDA3LCJlbWFpbCI6InNhY2hpbmV4dHJhMDAwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTE4MTM5ODQwMDMxNTAwNDgxODIxIl0sImVtYWlsIjpbInNhY2hpbmV4dHJhMDAwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.bouqCtPS5ifu330DB_o-Qe29C-NNzIOE1XcjiW53JlxixYcuLzTYSmnx3YwhbOUVU5bdHoT_3w7PlUd5RFF7wlNKg3Vzc_4P_GtQP1kC5zloh2dVMHZlE7_Hm5OhrmxWyefIDauXAjZlot4Odmb80LAAnzB9m-DOcv2Kc2gO57XFEfJPJFwICAhjhamncwtX6MzwHEbWJv52bjtqIdjr_FxNf50erzA5WzwiNf0oGpWV75_3K6kptPanJqe2gT6AiZ8CSQHuDna7I2vOqn2Z-hNJK8fBnCJqo1-bZJpzST9DXU9XooVeMBCFfMvKBGnTPAm89bCdyYsu1wjthOLbXg"
+auth
+: 
+AuthImpl {app: FirebaseAppImpl, heartbeatServiceProvider: Provider, config: {…}, currentUser: UserImpl, emulatorConfig: null, …}
+displayName
+: 
+"sachin kumar"
+email
+: 
+"sachinextra000@gmail.com"
+emailVerified
+: 
+true
+isAnonymous
+: 
+false
+metadata
+: 
+UserMetadata {createdAt: '1674573755382', lastLoginAt: '1674589407762', lastSignInTime: 'Tue, 24 Jan 2023 19:43:27 GMT', creationTime: 'Tue, 24 Jan 2023 15:22:35 GMT'}
+phoneNumber
+: 
+null
+photoURL
+: 
+"https://lh3.googleusercontent.com/a/AEdFTp5j2w17cOwesofwGMODX-mWX0IEcMv1c678g7G7=s96-c"
+proactiveRefresh
+: 
+ProactiveRefresh {user: UserImpl, isRunning: false, timerId: null, errorBackoff: 30000}
+providerData
+: 
+[{…}]
+providerId
+: 
+"firebase"
+reloadListener
+: 
+null
+reloadUserInfo
+: 
+{localId: 'tfbxSGgZq8f9UQ4VEFhR8lwxm6t1', email: 'sachinextra000@gmail.com', displayName: 'sachin kumar', photoUrl: 'https://lh3.googleusercontent.com/a/AEdFTp5j2w17cOwesofwGMODX-mWX0IEcMv1c678g7G7=s96-c', emailVerified: true, …}
+stsTokenManager
+: 
+StsTokenManager {refreshToken: 'AOkPPWQIQu__JPePF8Rx--dUmBVjy-m8KTeDG8WPhmpZ7Yeyr5…mvQhE0Iu7NZE_lZjBUFcbO7FNJCToe7Lle_TVcQZz5PvlmCG4', accessToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YW…JpzST9DXU9XooVeMBCFfMvKBGnTPAm89bCdyYsu1wjthOLbXg', expirationTime: 1674593008460}
+tenantId
+: 
+null
+uid
+: 
+"tfbxSGgZq8f9UQ4VEFhR8lwxm6t1"
