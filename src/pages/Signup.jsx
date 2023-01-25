@@ -9,7 +9,7 @@ import {AiFillGithub} from 'react-icons/ai';
 import './signup.scss';
 import loginPng from '../assets/login.png';
 
-import { auth,signInWithGoogle } from '../config/firebase';
+import { auth,signInWithGoogle as signUpWithGoogle } from '../config/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import useForm from '../custom_hook/form-hook';
  
@@ -104,7 +104,7 @@ function Signup() {
 
         <div className="third__party">
 
-          <div className="google" onClick={signInWithGoogle}>
+          <div className="google" onClick={signUpWithGoogle}>
             <FcGoogle />
             <span> Sign Up With Google </span>
             <HiOutlineArrowSmRight/>
