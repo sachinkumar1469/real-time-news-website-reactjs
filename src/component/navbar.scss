@@ -31,6 +31,10 @@
                 text-decoration: none;
                 color: #645757;
             }
+
+            .active{
+                color: black;
+            }
         }
 
         .menu__left{
@@ -68,6 +72,47 @@
             border: none;
             background-color: #4f4ffc;
             color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    .navbar{
+        
+        .logo{
+            
+            img{
+                
+            }
+        }
+        .menu{
+            justify-content: end;
+            .menu__right{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .navbar{
+        
+        .logo{
+            
+            img{
+                
+            }
+        }
+        .menu{
+            
+            .menu__right{
+                display: none;
+
+            }
+            .menu__left{
+                >svg{
+                    display: none;
+                }
+            }
         }
     }
 }

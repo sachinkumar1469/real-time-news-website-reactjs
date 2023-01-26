@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './navbar.scss';
 
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+
+import { signOutUser } from '../config/firebase';
+
+import { NavLink,Link } from 'react-router-dom';
 
 import {FiInstagram, FiTwitter, FiFacebook, FiLinkedin} from 'react-icons/fi'
 import {FaUserCircle} from 'react-icons/fa';
 
+import Button from './button/Button';
+import { authContext } from '../context/AuthContext';
+
 function Navbar() {
+
+  const {currUser} = useContext(authContext);
+
+  const logout = (e)=>{
+    signOutUser()
+    .then(res=>{
+      console.log(res);
+    })
+    .catch(err=>{
+      console.log(err);
+    })
+  }
+
   return (
     <div className="navbar">
         <div className="logo">
@@ -14,9 +34,9 @@ function Navbar() {
         </div>
         <div className="menu">
             <div className="menu__right">
-                <a href="">LEARN</a>
-                <a href="">BLOG</a>
-                <a href="">BOOKMARK</a>
+                <a href="#">LEARN</a>
+                <NavLink to="/">BLOG</NavLink>
+                <a href="#">BOOKMARK</a>
             </div>
             <div className="menu__left">
                 <FiTwitter/>
@@ -30,7 +50,9 @@ function Navbar() {
             
         </div>
         <div className="user_detail">
-            <button>Logout</button>
+          {currUser && <Button onClick={logout}>Logout</Button>}
+          {!currUser && <Button> <Link to="/signin">Sign In</Link> </Button>}
+            
         </div>
     </div>
   )

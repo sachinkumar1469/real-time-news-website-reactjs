@@ -16,6 +16,8 @@ const options = {
     // }
 }
 
+
+
 const getApiData = (keyword = "top-headlines")=>{
     return axios.get(BASE_URL,options)
 

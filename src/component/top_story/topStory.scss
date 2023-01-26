@@ -1,0 +1,16 @@
+.topStory{
+    padding-block: 0.6rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid black;
+    // margin-bottom: 1rem;
+    // border: 1px solid red;
+
+    .topstory_content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 30px;
+
+        padding-top: 2rem;
+    }
+}

@@ -2,6 +2,7 @@
     padding-block: 0.6rem;
     padding-bottom: 2rem;
     border-bottom: 3px solid black;
+    // border: 1px solid red;
 
     .news-content{
         display: grid;
@@ -49,6 +50,25 @@
 
             >*{
                 // border: 1px solid red;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .featured{
+        .news-content{
+            grid-template-columns: 1fr;
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                justify-content: space-between;
+                height: max-content;
+    
+                >*{
+                    // border: 1px solid red;
+                }
             }
         }
     }

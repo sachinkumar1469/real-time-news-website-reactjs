@@ -9,10 +9,16 @@
     
 }
 
+@media screen and (max-width:1024px){
+    .home{
+        padding: 0 5%;
+    }
+}
+
 .home::before{
     content: "";
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,6 +26,7 @@
     bottom: 0;
     z-index: -1;
     background-image: url("https://img.freepik.com/premium-photo/light-grey-marble-texture-background_7189-2462.jpg");
+    
     background-size: cover;
     opacity: 0.5;
 }

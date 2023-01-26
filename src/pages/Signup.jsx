@@ -5,6 +5,8 @@ import {HiOutlineArrowSmRight} from 'react-icons/hi';
 import {FcGoogle} from 'react-icons/fc';
 import {AiFillGithub} from 'react-icons/ai';
 
+import { Link } from 'react-router-dom';
+
 
 import './signup.scss';
 import loginPng from '../assets/login.png';
@@ -91,7 +93,7 @@ function Signup() {
         </div>
 
         <div className="utility_link">
-          <p><a href='#'>Already Have An Account</a></p>
+          <p><Link to="/signin">Already Have An Account</Link></p>
         </div>
 
         <div className="signin">

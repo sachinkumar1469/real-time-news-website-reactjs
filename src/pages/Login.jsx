@@ -7,6 +7,8 @@ import {AiFillGithub} from 'react-icons/ai';
 
 import useForm from '../custom_hook/form-hook';
 
+import { Link, NavLink } from 'react-router-dom';
+
 
 import './login.scss';
 import loginPng from '../assets/login.png';
@@ -23,7 +25,7 @@ import { authContext } from '../context/AuthContext';
  
 function Login() {
 
-  const [email,onEmailChange] = useForm("default");
+  const [email,onEmailChange] = useForm("");
   const [password,onPassChange] = useForm("");
   
   const navigate = useNavigate();
@@ -74,7 +76,7 @@ function Login() {
         </div>
 
         <div className="utility_link">
-          <p><a href='#'>Create Account</a></p>
+          <p><Link to={"/signup"}>Create Account</Link></p>
           <p><a href='#'>Forgot Password?</a></p>
         </div>
 

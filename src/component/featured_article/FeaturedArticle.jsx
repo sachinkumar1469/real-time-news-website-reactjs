@@ -15,7 +15,7 @@ function FeaturedArticle({newsData}) {
                 <div className="left">
                     <img src={data[0]?.urlToImage}/>
                     <p className='featured__date'>{data[0]?.publishedAt.split("T")[0]}</p>
-                    <a>{data[0]?.title}</a>
+                    <a href={data[0]?.url} target="_blank">{data[0]?.title}</a>
                     <p className='featured__desc'>{data[0]?.description}</p>
                 </div>
 
@@ -23,7 +23,6 @@ function FeaturedArticle({newsData}) {
                     <FeaturedArticleListItem item={data[1]}/>
                     <FeaturedArticleListItem item={data[2]}/>
                     <FeaturedArticleListItem item={data[3]}/>
-
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ import dummyData from '../config/dummyData';
 
 import { Link } from 'react-router-dom';
 import FeaturedArticle from '../component/featured_article/FeaturedArticle';
+import TopStory from '../component/top_story/TopStory';
 
 function Home({state,dispatch}) {
   // console.log("State in Home",state.user.uid);
@@ -41,6 +42,7 @@ function Home({state,dispatch}) {
       <Navbar/>
       <div className="content">
         <FeaturedArticle newsData={newsData}/>
+        <TopStory newsData={newsData}/>
       </div>
     </div>
   )

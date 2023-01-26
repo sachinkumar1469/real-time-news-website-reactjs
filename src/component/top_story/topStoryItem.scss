@@ -1,0 +1,38 @@
+.topStoryItem{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+            .item_img{
+                width: 100%;
+                height: 10rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .featured__date{
+                font-size: 0.8rem;
+                color: #645757;
+            }
+
+            a{
+                font-size: 1.1rem;
+                text-align:left;
+                color: inherit;
+                text-decoration: none;
+                font-weight: 500;
+                line-height: 1.2rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .featured__desc{
+                font-size: 0.9rem;
+                color: #645757;
+                line-height: 1rem;
+            }
+}

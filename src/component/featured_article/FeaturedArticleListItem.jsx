@@ -9,7 +9,7 @@ function FeaturedArticleListItem({item}) {
         </div>
         <div className="item__info">
             <p className='item__date'>{item?.publishedAt.split("T")[0]}</p>
-            <a className='item__desc'>{item?.title}</a>
+            <a className='item__desc' href={item?.url} target="_blank">{item?.title}</a>
         </div>
     </div>
   )

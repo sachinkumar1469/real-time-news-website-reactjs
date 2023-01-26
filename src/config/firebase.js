@@ -2,6 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
+import { signOut } from 'firebase/auth';
+
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -25,6 +27,10 @@ export const auth = getAuth();
 
 // Singin With Google Implementation
 auth.languageCode = 'it';
+
+export const signOutUser = ()=>{
+  return signOut(auth);
+}
 
 export const signInWithGoogle = async ()=>{
   const result  = await signInWithPopup(auth,new GoogleAuthProvider());

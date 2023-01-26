@@ -40,3 +40,22 @@
         
     }
 }
+
+@media screen and (max-width:1024px){
+    .featuredArticleListItem{
+        grid-template-columns: 2fr 1fr;
+        .item__img{
+            
+            order: 3;
+        }
+        .item__info{
+            order: 1;
+    
+            
+    
+            a{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
