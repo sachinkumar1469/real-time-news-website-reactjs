@@ -37,6 +37,9 @@ function Login() {
       console.log(data);
       setCurrUser(data.user);
     })
+    .catch(err=>{
+      console.log(err);
+    })
   }
 
   function onSignInWithEmail(){
@@ -50,6 +53,7 @@ function Login() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+  
       });
   }
 

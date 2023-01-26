@@ -19,20 +19,23 @@ function Home({state,dispatch}) {
   const [error,setError] = useState({err:false,msg:""});
   
   useEffect(()=>{
-      // getApiData()
-      // .then(data=>{
-      //     // console.log(JSON.stringify(data.data.articles));
-      //     setNewsData(data.data.articles);
-      //     console.log(JSON.stringify(data.data.articles));
-      // })
-      // .catch(err=>{
-      //     setError({
-      //     err:true,
-      //     msg:"Unable to fetch api data"
-      //     });
-      //     console.log("err",err,"err");
-      // })
-      setNewsData(apiCustomData);
+
+    // Below provided API will only work in development mode. Api will response only on localhost domain for build version dummy data is used
+    // getApiData()
+    // .then(data=>{
+    //     // console.log(JSON.stringify(data.data.articles));
+    //     setNewsData(data.data.articles);
+    //     console.log(JSON.stringify(data.data.articles));
+    // })
+    // .catch(err=>{
+    //     setError({
+    //     err:true,
+    //     msg:"Unable to fetch api data"
+    //     });
+    //     console.log("err",err,"err");
+    // })
+    
+    setNewsData(apiCustomData);
   },[])
   
 
