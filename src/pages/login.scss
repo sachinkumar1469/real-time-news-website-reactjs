@@ -106,6 +106,7 @@
                 
                 align-items: center;
                 justify-content: space-between;
+                cursor: pointer;
                 // align-items: center;
 
                 svg{
@@ -117,6 +118,7 @@
                     padding-inline: 8px;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                 }
             }
         }

@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-import { signOut } from 'firebase/auth';
+import { signOut,signInWithRedirect } from 'firebase/auth';
 
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
@@ -34,6 +34,7 @@ export const signOutUser = ()=>{
 
 export const signInWithGoogle = async ()=>{
   const result  = await signInWithPopup(auth,new GoogleAuthProvider());
+  // const result = signInWithRedirect(auth,new GoogleAuthProvider());
 
   return result;
     // .then((result) => {

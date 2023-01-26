@@ -5,7 +5,7 @@ import Navbar from '../component/Navbar';
 
 import getApiData from '../config/newsApi';
 
-import dummyData from '../config/dummyData';
+import apiCustomData from '../config/dummyData';
 
 import { Link } from 'react-router-dom';
 import FeaturedArticle from '../component/featured_article/FeaturedArticle';
@@ -19,20 +19,20 @@ function Home({state,dispatch}) {
   const [error,setError] = useState({err:false,msg:""});
   
   useEffect(()=>{
-      getApiData()
-      .then(data=>{
-          // console.log(JSON.stringify(data.data.articles));
-          setNewsData(data.data.articles);
-          // console.log(data);
-      })
-      .catch(err=>{
-          setError({
-          err:true,
-          msg:"Unable to fetch api data"
-          });
-          console.log("err",err,"err");
-      })
-      // setNewsData(dummyData);
+      // getApiData()
+      // .then(data=>{
+      //     // console.log(JSON.stringify(data.data.articles));
+      //     setNewsData(data.data.articles);
+      //     console.log(JSON.stringify(data.data.articles));
+      // })
+      // .catch(err=>{
+      //     setError({
+      //     err:true,
+      //     msg:"Unable to fetch api data"
+      //     });
+      //     console.log("err",err,"err");
+      // })
+      setNewsData(apiCustomData);
   },[])
   
 
