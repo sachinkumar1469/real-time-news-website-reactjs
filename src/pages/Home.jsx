@@ -8,7 +8,7 @@ import getApiData from '../config/newsApi';
 import dummyData from '../config/dummyData';
 
 import { Link } from 'react-router-dom';
-import FeaturedArticle from '../component/FeaturedArticle';
+import FeaturedArticle from '../component/featured_article/FeaturedArticle';
 
 function Home({state,dispatch}) {
   // console.log("State in Home",state.user.uid);

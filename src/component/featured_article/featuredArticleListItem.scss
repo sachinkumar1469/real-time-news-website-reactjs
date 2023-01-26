@@ -1,0 +1,42 @@
+.featuredArticleListItem{
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    justify-content: space-between;
+    height: 30%;
+    gap: 25px;
+
+    .item__img{
+        
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+    .item__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+
+        .item__date{
+            font-size: 0.8rem;
+            color: #645757;
+        }
+
+        a{
+            font-size: 1.1rem;
+            text-align:left;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+            line-height: 1.2rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
