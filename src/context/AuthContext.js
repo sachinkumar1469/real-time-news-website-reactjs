@@ -9,7 +9,7 @@ export const authContext = createContext();
 
 export function AuthContext({children}) {
 
-    const [currUser,setCurrUser] = useState();
+    const [currUser,setCurrUser] = useState(null);
 
     const navigate = useNavigate();
 
@@ -23,6 +23,7 @@ export function AuthContext({children}) {
         }
     })
     return (
+        
         <authContext.Provider value={{currUser,setCurrUser}}>
             {children}
         </authContext.Provider>

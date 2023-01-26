@@ -19,7 +19,7 @@ import { authContext } from './context/AuthContext';
 function App() {
 
   const {currUser,setCurrUser} = useContext(authContext);
-  console.log(currUser);
+  // console.log(currUser);
 
   let route;
 

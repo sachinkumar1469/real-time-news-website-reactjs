@@ -16,8 +16,7 @@ import loginPng from '../assets/login.png';
 
 
 import { auth,signInWithGoogle } from '../config/firebase';
-
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 
 import { useNavigate } from 'react-router-dom';
@@ -41,18 +40,16 @@ function Login() {
   }
 
   function onSignInWithEmail(){
-    createUserWithEmailAndPassword(auth, email, password)
+
+    signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log(user);
         // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
-        console.log(errorMessage);
       });
   }
 

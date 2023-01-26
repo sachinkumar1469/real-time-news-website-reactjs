@@ -14,24 +14,25 @@ import TopStory from '../component/top_story/TopStory';
 function Home({state,dispatch}) {
   // console.log("State in Home",state.user.uid);
 
-  const [newsData,setNewsData] = useState([]);
+  const [newsData,setNewsData] = useState();
 
   const [error,setError] = useState({err:false,msg:""});
   
   useEffect(()=>{
-      // getApiData()
-      // .then(data=>{
-      //     console.log(JSON.stringify(data.data.articles));
-      //     setNewsData(data);
-      // })
-      // .catch(err=>{
-      //     setError({
-      //     err:true,
-      //     msg:"Unable to fetch api data"
-      //     });
-      //     console.log("err",err,"err");
-      // })
-      setNewsData(dummyData);
+      getApiData()
+      .then(data=>{
+          // console.log(JSON.stringify(data.data.articles));
+          setNewsData(data.data.articles);
+          // console.log(data);
+      })
+      .catch(err=>{
+          setError({
+          err:true,
+          msg:"Unable to fetch api data"
+          });
+          console.log("err",err,"err");
+      })
+      // setNewsData(dummyData);
   },[])
   
 
@@ -40,10 +41,10 @@ function Home({state,dispatch}) {
   return (
     <div className="home">
       <Navbar/>
-      <div className="content">
+      {newsData && <div className="content">
         <FeaturedArticle newsData={newsData}/>
         <TopStory newsData={newsData}/>
-      </div>
+      </div>}
     </div>
   )
 }
