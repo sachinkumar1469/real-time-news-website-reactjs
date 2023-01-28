@@ -15,7 +15,7 @@ import loginPng from '../assets/login.png';
 
 
 
-import { auth,signInWithGoogle } from '../config/firebase';
+import { auth,signInWithGoogle,signInWithGithub } from '../config/firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 
@@ -97,7 +97,7 @@ function Login() {
             <HiOutlineArrowSmRight/>
           </div>
 
-          <div className="github">
+          <div className="github" onClick={signInWithGithub}>
             <AiFillGithub/>
             <span>Sign In With Github</span> 
             <HiOutlineArrowSmRight/>

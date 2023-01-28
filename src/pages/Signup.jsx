@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import './signup.scss';
 import loginPng from '../assets/login.png';
 
-import { auth,signInWithGoogle as signUpWithGoogle } from '../config/firebase';
+import { auth,signInWithGoogle as signUpWithGoogle,signInWithGithub as signUpWithGithub } from '../config/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import useForm from '../custom_hook/form-hook';
  
@@ -51,6 +51,8 @@ function Signup() {
         console.log(errorMessage);
       });
   }
+
+
 
   return (
     <div className='signup'>
@@ -112,7 +114,7 @@ function Signup() {
             <HiOutlineArrowSmRight/>
           </div>
 
-          <div className="github">
+          <div className="github" onClick={signUpWithGithub}>
             <AiFillGithub/>
             <span>Sign Up With Github</span> 
             <HiOutlineArrowSmRight/>
